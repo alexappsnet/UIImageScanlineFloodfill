@@ -49,7 +49,7 @@
         NSUInteger bytesPerRow = CGImageGetBytesPerRow(imageRef);
         NSUInteger bitsPerComponent = CGImageGetBitsPerComponent(imageRef);
 
-        unsigned char *imageData = malloc(height * width * bytesPerPixel);
+        unsigned char *imageData = malloc(height * bytesPerRow);
       
         CGBitmapInfo bitmapInfo = CGImageGetBitmapInfo(imageRef);
       
